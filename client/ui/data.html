@@ -1,0 +1,35 @@
+<template name="data">
+  <div class="container">
+  {{#if currentUser}}
+    <div id="website_form">
+      <form class="js-add-data">
+        <div class="form-group">
+          <label for="description">Data</label>
+          <input type="text" class="form-control" id="description"
+                 placeholder="Put fake description (data) here..." required>
+        </div>
+        <button type="submit" class="btn btn-primary">
+          Add Data
+        </button>
+      </form>
+    </div>
+  {{else}}
+    <div class="alert alert-info" role="alert">
+      Sign in or join to add <em>fake</em>data!
+    </div>
+  {{/if}}
+
+  {{#each datapts}}
+  <div class="row data">
+    <div class="col-xs-12">
+      <p>{{description}}</p>
+      <p>{{createdBy}} :: <em>{{createdAt}}</em></p>
+    </div>
+  </div>
+  {{/each}}
+  
+  </div>
+</template>
+
+
+

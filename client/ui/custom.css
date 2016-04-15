@@ -1,0 +1,17 @@
+/*
+ * client/ui/custom.css
+ *
+ * Copyright (C) 2016 Christopher C. Strelioff
+ *
+ * Distributed under terms of the MIT license.
+ */
+.data {
+  border-left: 3px solid lightgray;
+  margin: 10px 0px;
+}
+
+.users {
+  border-left: 3px solid lightgray;
+  margin: 10px 0px;
+}
+

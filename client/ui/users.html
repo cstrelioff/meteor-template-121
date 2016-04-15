@@ -1,0 +1,14 @@
+<template name="users">
+<div class="container">
+
+  {{#each user}}
+  <div class="row users">
+    <div class="col-xs-12">
+      <h4>{{username}}</h4>
+      <p>joined: <em>{{createdAt}}</em></p>
+    </div>
+  </div>
+  {{/each}}
+  
+</div>
+</template>

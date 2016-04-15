@@ -1,0 +1,58 @@
+<template name="home">
+<div class="container">
+  <h2>Overview</h2>
+
+  <p>
+    This is a template for a Meteor 1.2.1 app -- no longer the current version.
+    However, one can still create an application at this version using:
+  </p>
+  
+  <pre>$ meteor create myapp --release 1.2.1</pre>
+
+  <p>
+    This starting point has the following features:
+  </p>
+
+  <ul>
+    <li>The application structure has been modified from the 1.2.1 default --
+        see below.
+    </li>
+    <li>The <strong>autopublish</strong> and <strong>insecure</strong> packages
+        have been removed and publish/subscribe as well as Meteor methods have
+        been employed.
+    </li>
+    <li>Bootstrap packages for page and accounts-ui have been added.</li>
+    <li>Startup method creates fake data and users to start out.</li>
+    <li><strong>iron:router</strong> has been used to display fake users
+        and data at the /users and /data urls.</li>
+  </ul>
+
+  <p>The structure for this template is:</p>
+
+  <pre>$ tree .
+.
+├── client
+│   ├── api
+│   │   └── accounts.js
+│   └── ui
+│       ├── custom.css
+│       ├── data.html
+│       ├── data.js
+│       ├── home.html
+│       ├── layout.html
+│       ├── loading.html
+│       ├── navbar.html
+│       ├── users.html
+│       └── users.js
+├── lib
+│   ├── collections.js
+│   └── routes.js
+└── server
+    ├── main.js
+    ├── methods.js
+    └── startup.js
+
+5 directories, 15 files</pre>
+
+</div>
+</template>
